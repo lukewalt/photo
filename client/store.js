@@ -12,5 +12,7 @@ const defaultState = {
 };
 
 // creates store using interface of the rootReducer with data of init state
-export default const store = createStore(rootReducer, defaultState);
-export const history = syncHistoryWithStore(browserHistory)
+const store = createStore(rootReducer, defaultState);
+
+export const history = syncHistoryWithStore(browserHistory);
+export default store;
