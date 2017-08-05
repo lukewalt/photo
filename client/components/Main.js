@@ -9,7 +9,9 @@ export default class Main extends Component {
   render() {
     return (
       <div>
-        <h1>Redux Photo</h1>
+        <h1>
+          <Link to='/'>Redux Photo</Link>
+        </h1>
         {cloneElement(this.props.children, this.props)}
       </div>
     )

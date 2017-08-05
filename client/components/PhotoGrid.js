@@ -6,7 +6,9 @@ export default class PhotoGrid extends Component {
   render() {
     return (
       <div className="photo-grid">
-        Im the PhotoGrid
+        <pre>
+          {JSON.stringify(this.props.posts, null, ' ')}
+        </pre>
       </div>
     )
   }
