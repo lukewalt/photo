@@ -19,7 +19,10 @@ const Comments = React.createClass({
     const { postId } = this.props.params;
     const author = this.refs.author.value;
     const comment = this.refs.comment.value;
-    console.log(postId, author, comment);
+
+    // update state using reducer
+    this.props.addComment(postId, author, comment)
+
   },
 
   render() {
