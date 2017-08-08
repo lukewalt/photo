@@ -4,11 +4,11 @@ const Comments = React.createClass({
 
   renderComment(comment, i) {
     return (
-      <div key={i}>
+      <div className="comment" key={i}>
         <p>
           <strong>{comment.user}</strong>
           {comment.text}
-          <button className="remove-comment">&times;</button>
+          <button className="remove-comment" onClick={this.props.removeComment.bind(null, this.props.params.postId, i)}>&times;</button>
         </p>
       </div>
     )

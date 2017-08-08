@@ -12,7 +12,7 @@ export default class Single extends Component {
     const i = this.props.posts.findIndex( posts => posts.code === postId);
     // get the post
     const post = this.props.posts[i];
-    // get comments for post ; allows looping over no comments and push one for the first time
+    // get comments for post ; if there are none the or operator keeps it from erroring out 
     const postComments = this.props.comments[postId] || [];
 
     return (
