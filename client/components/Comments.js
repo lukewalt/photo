@@ -22,7 +22,7 @@ const Comments = React.createClass({
 
     // update state using reducer
     this.props.addComment(postId, author, comment)
-
+    this.refs.commentForm.reset();
   },
 
   render() {
