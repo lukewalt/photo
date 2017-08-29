@@ -3,13 +3,10 @@
 // copy of the current state
 
 function posts(state = [], action) {
-  console.log(state, action);
-
 
   switch(action.type) {
     case 'INCREMENT_LIKES' :
       //return updated state
-      console.log('incrementing likes');
       const i = action.index;
 
       return [
